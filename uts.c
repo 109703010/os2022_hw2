@@ -19,7 +19,7 @@ int container_main(void* arg)
 {
     printf("Container - inside the container!\n");
     // 設定自己的hostname名稱
-    sethostname([your_hostname],10); 
+    sethostname("Andy",10); 
     // 直接執行一個shell，讓之後可以觀察這個行程的資源有沒有被隔離
     execv(container_args[0], container_args); 
     printf("Something's wrong!\n");
